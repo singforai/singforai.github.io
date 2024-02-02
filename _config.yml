@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Park hyunwoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "his is a blog where a undergraduate research student organizes what they have learned."
+  bio              : "This is a blog where a undergraduate research student organizes what they have learned."
   location         : "University of Seoul-CIDA Lab"
   email            : "singfor7012@gmail.com"
   links:
