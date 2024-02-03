@@ -16,7 +16,7 @@ docs:
     url: /tags/
     children:
       - title: "CS231n"
-        url: /tags/CS231n/
+        url: /tags/cs231n/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
