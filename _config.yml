@@ -293,3 +293,4 @@ defaults:
       show_date: true
       toc: true
       author_profile: false
+      published: true
