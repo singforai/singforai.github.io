@@ -292,4 +292,4 @@ defaults:
       related: true
       show_date: true
       toc: true
-      author_profiles: false
+      author_profile: false
