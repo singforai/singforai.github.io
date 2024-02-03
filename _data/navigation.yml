@@ -10,8 +10,14 @@ main:
 docs:
   - title: "Category"
     url: /categories/
+    children:
+      - title: "computer vision"
+        url: /categories/computervision/
   - title: "Tag"
     url: /tags/
+    children:
+      - title: "cs231n"
+        url: /tags/cs231n/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
