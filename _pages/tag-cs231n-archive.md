@@ -1,7 +1,7 @@
 ---
 title: "CS231n"
 layout: tags
-permalink: /tags/CS231n/
+permalink: /tags/cs231n/
 author_profile: false
 sidebar_main: true
 ---
