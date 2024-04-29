@@ -92,11 +92,7 @@ L^{CLIP}(\theta) = \hat{\mathbb{E}}\Big[\min(r_t(\theta)\hat{A}_t,\,clip(r_t(\th
 $$
 epsilon은 하이퍼파라미터로 예를 들어 0.2라고 가정한다. 이 objective의 동기는 아래와 같다. min 내부의 첫 번째 항은 L^CPI이다. 두 번째 항은 확률 비율을 clipping하여 surrogate objective를 수정하며 이로써 r_t가 [1-eps, 1+eps]구간을 벗어나려는 의욕을 제거한다. 마지막으로 clipped objective와 unclipped objective를 비교해 작은 값을 선택하여 최종적인 objective는 unclipped objective에 대한 하한이 된다. 이 방식을 이용하면 object가 개선될 때에만 probability ratio의 변화를 무시하고, object가 악화될 때에만 포함시킨다. L^CLIP(θ)는 θold 주변에서  first-order(1차 근사)로는 같지만 θ가 θold에서 멀어질수록 다르게 된다. 
 
-################## Figure 1
-
 Figure 1은 L^CLIP의 single term(single t)를 그래프로 나타내며, 이때 probability ratio r은 advantage가 양수인지 음수인지에 따라 [1-eps, 1+eps]에서 클리핑된다는 것을 알 수 있다. 
-
-################## Figure 2
 
 Figure 2는 surrogate objective(L^CLIP)에 대한 직관을 제시한다. continuous control problem에서 PPO를 통해 policy update 방향을 보간(중간에 삽입)함에 따라 여러 objective function이 어떻게 변하는지 보여준다. L^CLIP가 L^CPI의 하한임을 볼 수 있으며, 정책 업데이트가 너무 급격한 경우에 대해 penalty가 있음을 확인가능하다.  
 
